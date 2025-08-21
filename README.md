@@ -13,9 +13,9 @@ We start with a simple **Deep Averaging Network (DAN)** baseline, where trainabl
 
 ### Preprocessing  
 - **Cleaning:** Removal of punctuation, stopwords, and lowercasing.  
-- **Train/Test Split:** Stratified split to preserve spam/ham balance.  
+- **Train/Test Split:** Stratified split to preserve spam/ham distribution across train and test sets.  
 - **Tokenization:** Conversion of words into integer IDs.  
-- **Padding:** Sequences padded to `max_length = 44` for uniform input size.  
+- **Padding:** Sequences padded for uniform input size.  
 
 ### PyTorch Dataset  
 - Wrapped tokenized inputs and labels into a custom `Dataset` class.  
